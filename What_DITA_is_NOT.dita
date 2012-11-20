@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_lbs_1sv_f3">
+ <title>What DITA is NOT</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>DITA is not a tool like Dreamweaver. You author DITA on an XML editor. While you can use any
+   text editor to author DITA content, having an editor that understands the DITA standard means you
+   can let it spot your typos and other mistakes. Some of the DITA-aware XML editors, like oXygen
+   and Arbortext, also have the capability of transforming the DITA content into deliverables like
+   PDF, WebHelp, JavaHelp, Eclipse Content and epub. The other important tool for using DITA is the
+   DITA Open Toolkit which transforms DITA content into nearly a dozen different output types.</p>
+  <p>Web sites are not written in DITA. While HTML browsers can "read" DITA files, they cannot
+   display it in a usable form unless the file also includes a link to a CSS style sheet. So while
+   the master content is stored in DITA, it is almost never published that way. It is transformed
+   into an HTML-type output format and styled with a CSS style sheet to make it look the way the
+   customer sees it. </p>
+ </conbody>
+</concept>

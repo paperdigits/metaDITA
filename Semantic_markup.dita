@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bdk_nrv_f3">
+ <title>Semantic markup</title>
+ <shortdesc/>
+ <conbody>
+  <p>Just about every corporate style guide has a list of the formatting used to visually identify
+   the different features. For example, all products manuals that show a GUI (graphic user
+   interface) have special formatting for UI elements, filenames, and programming code. But while
+   O'Reily Press uses italics for filenames, IBM uses monospace, and Microsoft uses TitleCaps, they
+   all mean the same thing. So DITA tags them with the <codeph>&lt;filepath></codeph> element. Then,
+   if someone high up in the corporation decides that filenames should be displayed in the corporate
+   color, the change only needs to be done on the stylesheets (stored on a corporate server), not on
+   every single document produced by the corporation.</p>
+  <p>DITA has semantic tagging elements for all the types of content that commonly occur in
+   Technical Communication and has the capability of adding more as the need arises. Some of the
+   DITA elements include: 
+   <ul id="ul_xgv_rrv_f3">
+    <li>task</li>
+    <li>concept</li>
+    <li>map</li>
+    <li>filepath</li>
+    <li>uicontrol</li>
+    <li>p</li>
+    <li>ph</li>
+    <li>codeph</li>
+    <li>step</li>
+   </ul>
+  </p>
+  <p>They can nest inside each other based on rules defined by the DITA standard.</p>
+ </conbody>
+</concept>

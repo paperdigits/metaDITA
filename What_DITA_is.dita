@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_icj_xpv_f3">
+ <title>What DITA is</title>
+ <shortdesc/>
+ <conbody>
+  <p>DITA is a way of organizing and tagging your content (content is what the authors write and the
+   editors edit) to create deliverables. (what the end user reads and learn from) It is a way of
+   organizing your content in smaller chunks, so that rather than writing up one huge document as a
+   Word file and then a second set of documents for a Power Point slideshow and a third set of
+   documents as a html help file, you only write it once and then use XSLT (a pattern matching
+   technology) to convert it into the desired output format your end user sees. Because the content
+   (the important stuff) is separated from the formatting (font sizes, colors, page numbering, and
+   so on) it is very easy to take it and convert it into another content tagging format without
+   losing information.</p>
+
+  <p>For example the two most common ways of publishing data stored in DITA are HTML and PDF. The
+   final step in the processing of each of these deliverable formats is to add the style information
+   that makes the finished product look the way the publisher wants it to. DITA is an XML language.
+   Because of their regularity and consistent definitions, XML languages can be easily translated
+   into each other without loss of information.</p>
+
+  <p> DITA is similar in appearance to html. But where html is designed for presenting deliverables,
+   DITA is optimized for authoring content. Both XML and HTML are descended from SGML, an early data
+   markup language. Semantic markup Just about every corporate style guide has a list of the
+   formatting used to visually identify the different features. For example, all products manuals
+   that show a GUI (graphic user interface) have special formatting for UI elements, filenames, and
+   programming code. But while O'Reily Press uses italics for filenames, IBM uses monospace, and
+   Microsoft uses TitleCaps, they all mean the same thing. So DITA tags them with the
+   &lt;filepath&gt; element. Then, if someone high up in the corporation decides that filenames
+   should be displayed in the corporate color, the change only needs to be done on the stylesheets
+   (stored on a corporate server), not on every single document produced by the corporation. DITA
+   has semantic tagging elements for all the types of content that commonly occur in Technical
+   Communication and has the capability of adding more as the need arises. </p>
+
+  <p>DITA is similar in appearance to html. But where html is designed for presenting deliverables,
+   DITA is optimized for authoring content. Both XML and HTML are descended from SGML, an early data
+   markup language.</p>
+
+ </conbody>
+</concept>

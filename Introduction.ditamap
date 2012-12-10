@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>A Short Introduction to DITA</title>
+ <topicref href="What_DITA_is.dita"/>
+ <topicref href="What_DITA_is_NOT.dita"/>
+ <topicref href="Semantic_markup.dita"/>
+</map>

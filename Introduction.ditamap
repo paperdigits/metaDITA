@@ -4,5 +4,7 @@
  <title>A Short Introduction to DITA</title>
  <topicref href="What_DITA_is.dita"/>
  <topicref href="What_DITA_is_NOT.dita"/>
- <topicref href="Semantic_markup.dita"/>
+ <topicref href="Semantic_markup.dita">
+  <topicref href="Questions/Should_we_use_entities.dita"/>
+ </topicref>
 </map>

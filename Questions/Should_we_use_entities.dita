@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ofw_fyp_dj">
+  <title>Should we use entities in our DITA project?</title>
+  <body>
+    <p>If by "Entities" you mean "XML entities" (e.g. "&someentity;") then you
+    should never use them. Ever. Under any circumstances.</p>
+    
+    <p>It's not just the DITA way, it's the XML way: we should have never kept
+    general entities in XML. Entities are a hold-over from the ancient SGML
+    days. They were never a good idea in SGML and XML made them an even worse
+    idea. But at the time we formulated XML we were too tied to the SGML way to
+    be willing to leave entities out. But we should have.</p>
+    
+    <p>Note that I am not referring to numeric character references (e.g.,
+    •), which are different from entities (they are XML's built-in
+    character escaping syntax) nor to the built-in entities for escaping tag
+    syntax. I'm only referring to general entities that you declare in a
+    document's DTD file or internal DTD subset.</p>
+    
+    <p>General entities have a number of problems, not least of which is that they
+    can only be defined in DTDs, so if you want DTD-less documents or you want
+    to use XSD or RelaxNG exclusively, entities are not an option. DITA does not
+    require the use of DTDs for conforming DITA documents. So by that alone
+    entities would be a bad idea in a DITA context.</p>
+    
+    <p>But more than that, entities are not manageable. Entities are simply string
+    macros that are expanded by the XML parser at the time the document is
+    parsed. That means that, with very few exceptions, they are unmanageable
+    because any normal XML processor, such as is done by the DITA Open Toolkit
+    and similar processors, will never see the entity references, only the
+    replacement text.</p>
+    
+    <p>That means processors have no opportunity to do something different.</p>
+    
+    <p>With a semantic facility, like conref or better, conkeyref, the processor
+    can do different things in a controlled and manageable way, such as resolve
+    to different values in the context of different maps.</p>
+    
+    <p>So, to answer your original question: you should use conref or
+    with @keyref or some other element-based way to get the variability and
+    configurability you need.</p>
+  </body>
+</topic>

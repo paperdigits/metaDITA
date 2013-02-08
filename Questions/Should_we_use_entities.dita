@@ -3,7 +3,7 @@
 <topic id="topic_ofw_fyp_dj">
   <title>Should we use entities in our DITA project?</title>
   <body>
-    <p>If by "Entities" you mean "XML entities" (e.g. "&someentity;") then you
+    <p>If by "Entities" you mean "XML entities" (e.g. "<codeph>&amp;someentity;</codeph>") then you
     should never use them. Ever. Under any circumstances.</p>
     
     <p>It's not just the DITA way, it's the XML way: we should have never kept
